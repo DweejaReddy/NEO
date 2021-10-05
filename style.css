@@ -1,0 +1,169 @@
+body{
+    background-color: white;
+    font-family: "Lato",sans-serif;
+}
+#mainNavbar{
+    font-size: 1rem;
+    font-weight: 900;
+}
+#mainNavbar .navbar-nav{
+    margin-left: auto;
+}
+#mainNavbar .nav-link{
+    padding: 1rem 1.5rem;
+    color: #fa9806;
+}
+#mainNavbar .nav-link:hover{
+    font-size: 1.2rem;
+    /* text-decoration: underline; */
+    color: black;
+}
+#mainNavbar .nav-item a img{
+    display: none;
+}
+#mainNavbar .nav-item:hover a img{
+    display: inline;
+}
+.heading{
+    color: rgb(19, 10, 5);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+.heap {
+    display:inline-block;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+.heap:first-of-type {
+animation: showup 7s infinite;
+}
+
+.heap:last-of-type {
+width:0px;
+animation: reveal 7s infinite;
+}
+
+.heap:last-of-type span {
+margin-left:-355px;
+animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:355px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:355px;}
+}
+.img-responsive {
+    margin: 0 auto;
+}
+.heading1{
+    color: #ff9b06;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+.heading3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:rgb(191, 4, 248);
+}
+.btn{
+    border-radius: 20px;
+}
+.para{
+    color: black;
+    font-size: 1rem;
+}
+.para2{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+.navbar.scrolled{
+    background-color: #f3f0f0;
+    transition: background 0.5s;
+}
+.quote{
+    font-weight: bolder;
+    font-size: 1.1rem;
+}
+#faqs{
+    background-image: url(images/orange_bg.jpg);
+    height: 100%;
+    padding: 50px 0;
+    margin: auto auto;
+}
+.accordion .card{
+    border-radius: 0;
+    background: none;
+    border-left-width: 0;
+    border-right-width: 0;
+}
+.accordion .card .card-header{
+    background: none;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 0 ;
+}
+.accordion .card-header h2{
+    font-size: 1rem;
+}
+.accordion .card-header .btn{
+    color: white;
+    width: 100%;
+    text-align: left;
+    padding-left: 0;
+    padding-right:0;
+}
+.accordion .card-header i{
+    font-size: 1.3rem;
+    position: absolute;
+    top: 15px;
+    right: 1rem;
+}
+.accordion .card-body{
+    color: #000;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat scroll center scroll;
+    background-size: cover;
+}
+.carousel-item::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0.7;
+}
+.back{
+    background-color: rgb(56, 56, 56);
+}
+.linkCol{
+    color: #ff9b06;
+}
+.linkCol:hover{
+    color: white;
+    text-decoration: none !important;
+}
