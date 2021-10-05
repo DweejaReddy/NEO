@@ -77,27 +77,31 @@
       </div>
     </section>
 
+    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+
     <!-- ABOUT SECTION -->
-    <section class="container-fluid" id="about">
+    <section class="container" id="about">
       <div class="heading text-center my-5">ABOUT</div>
       <div class="row align-items-center mx-5 my-5">
-        <div class="col-sm-3 col-md-1 col-lg-2"></div>
+        <div class="col-md-1 col-lg-2"></div>
         <div class="col-sm-3 col-md-5 col-lg-4 align-items-center my-5">
           <div class="text-center">
             <div class="showcase-left">
             <img class="d-sm-3 d-lg-6 " id="pic1" src="images/ecell-black-logo.png" alt="" width="250px"></div> 
           </div>
         </div>
-        <div class="col-md-6 col-lg-5 text-sm-center  text-md-left">E-Cell VNIT is the entrepreneurship cell of VNIT. The very purpose of E-Cell is to foster a community of entrepreneurs and stimulate a constructive ecosystem for them. Throughout the year E-cell organizes events that promote managerial values among budding students across the country.</div>
+        <div class="col-sm-12 col-md-6 col-lg-5 para text-center text-md-left">E-Cell VNIT is the entrepreneurship cell of VNIT. The very purpose of E-Cell is to foster a community of entrepreneurs and stimulate a constructive ecosystem for them. Throughout the year E-cell organizes events that promote managerial values among budding students across the country.</div>
         
 
-
-        <div class="col-sm-3 col-md-1"></div>
+        <div class="col-sm-1 col-md-1"></div>
         <div class="col-sm-3 col-md-5 align-items-center my-5 order-md-2 order-sm-1">
           <div class="text-center showcase-right">
-            <img class="d-sm-3 d-lg-6" id="pic2" data-wow-duration="1" data-wow-delay=".1s" src="images/neo_logo_full.png" alt="" width="250px"></div>
+            <img class="d-sm-3 d-lg-6" id="pic2" src="images/neo_logo_full.png" alt="" width="250px"></div>
         </div>
-        <div class="col-md-6  text-sm-center  text-md-right order-md-1 order-sm-2"><span class="quote">"Young minds are less biased and have higher risk-taking capabilities"</span>
+        <div class="col-md-6  text-center para text-md-right order-md-1 order-sm-2"><span class="quote">"Young minds are less biased and have higher risk-taking capabilities"</span>
           Let us nurture them in the right direction.
          With this motive, National Entrepreneurship Olympiad was launched in the year 2018 aiming at fostering the growth of students and building an entrepreneurial mindset. It will provide students with the requisite exposure which is otherwise unavailable to school students. NEO is hence synonymous with a ladder that will help students enlighten them in an unexplored domain of startups and entrepreneurship.   
          </div>
@@ -253,10 +257,10 @@
                       <p class="g-color--white">For Association Opportunities Contact:<br><b>associate@ecellvnit.org</b></p>
                       <p class="g-color--white">For Sponsorship Opportunities Contact:<br><b>archis1331@gmail.com<b></b></b></p><b><b>
               </b></b></div><b><b>
-              <div class="col-md-1"></div>
-              <div class="col-sm-12 col-md-3 text-sm-left text-md-right">
+              <!-- <div class="col-md-3"></div> -->
+              <span class="col-sm-12 col-md-3 text-sm-left text-md-right">
                   <p class="g-font-size-14--xs g-color--white "> All rights reserved <br> &copy;<a class="linkCol" href="https://www.ecellvnit.org/" target="_blank">E-Cell Vnit</a></p>
-              </div>
+              </span>
             </div>
       </div>
   </footer>
@@ -313,6 +317,31 @@
        origin:'right',
        distance:'600px'
      });
+   </script>
+
+   <script>
+     let mybutton = document.getElementById("btn-back-to-top");
+
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  mybutton.addEventListener("click", backToTop);
+
+  function backToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
    </script>
 </body>
 </html>
