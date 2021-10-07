@@ -60,36 +60,6 @@ body{
     font-weight: bolder;
 }
 
-  .animated { 
-    background-repeat: no-repeat;
-    background-position: left top; 
-    -webkit-animation-duration: 10s;
-    animation-duration: 10s; 
-    -webkit-animation-fill-mode: both; 
-    animation-fill-mode: both; 
-    animation-iteration-count: infinite;
- }
- 
- @-webkit-keyframes tada { 
-    0% {-webkit-transform: scale(1);}
-    10%, 20% {-webkit-transform: scale(0.9) rotate(-3deg);} 
-    30%, 50%, 70%, 90% {-webkit-transform: scale(1.2) rotate(3deg);}
-    40%, 60%, 80% {-webkit-transform: scale(1.2) rotate(-3deg);} 
-    100% {-webkit-transform: scale(1) rotate(0);} 
- }
- 
- @keyframes tada { 
-    0% {transform: scale(1);} 
-    10%, 20% {transform: scale(0.9) rotate(-3deg);} 
-    30%, 50%, 70%, 90% {transform: scale(1.2) rotate(3deg);} 
-    40%, 60%, 80% {transform: scale(1.2) rotate(-3deg);} 
-    100% {transform: scale(1) rotate(0);}
- }
- 
- .tada { 
-    -webkit-animation-name: tada; 
-    animation-name: tada; 
- }
 .img-responsive {
     margin: 0 auto;
 }
@@ -123,13 +93,25 @@ body{
     font-weight: bolder;
     font-size: 1.1rem;
 }
-
+.stat{
+    background: #fa9806;
+}
+.stat h3{
+    font-size: 3vw;
+}
+.stat p{
+    font-size: 2vw;
+    font-weight: bolder;
+    color: #292b2c;
+}
 #faqs{
     background-image: url(images/orange_bg.jpg);
     height: 100%;
+    background-repeat: no-repeat;
     padding: 50px 0;
     margin: auto auto;
 }
+
 .accordion .card{
     border-radius: 0;
     background: none;
@@ -260,4 +242,16 @@ body{
     .end{
         font-size: 1rem;
     }
+}
+@media(max-width:768px){
+    .stat h3{
+        font-size: 7vw;
+    }
+    .stat i{
+        font-size: 45px;
+    }
+    .stat p{
+        font-size: 5vw;
+        font-weight: bolder;
+    }   
 }
